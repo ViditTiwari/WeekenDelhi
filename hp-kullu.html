@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Kullu</title>  
+
+  <link rel="stylesheet" href="css/onsenui.css">  
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="js/angular/angular.js"></script>    
+  <script src="js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+<style>
+
+.center{
+    text-align: center;
+}
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="center"><h4>Kullu<h4></div>   
+
+<div id="owl-demo" class="owl-carousel">
+  <div><a href="hp-shimla.html"><img src="img/hp/kullu/basheshwar.jpg"></a>
+  <h4>Basheshwar Mahadev Temple</h4>
+  <p>Basheshwar Mahadev Temple is dedicated to Lord Shiva.Also called as "Visveshvara Mahadev", this ancient temple is built in 8th century and is the largest of all the stone temples in Kullu.Basheshwar Mahadev Temple is famous for exquisite stone carvings, sculptures,flat shikharas.The outer surface of the temple is covered with the carvings.Basheshwar Mahadev Temple is located at village Bajaura in Kullu district on National Highway 21, about 4 kms from Bhuntar Airport and 15km from the town.</p>
+
+</div>
+  <div><a href="hp-kullu.html"><img src="img/hp/kullu/raison.jpg"></a>
+  <h4>Riason</h4>
+  <p>Raison is a small cluster of villages on the banks of Bias river about 12 km north of Kullu. It is famous for camping sites and starting point for white water rafting on Bias river. Recently a mineral water unit by "Catch" has been set up here. It is said that the mineral water is pure spring water and bottled after sterilization. This place is also famous for rural centre of Rajendra Prasad National Ophthalmology Centre (AIIMS) where summer camps for various ophthalmological diseases are held every year.</p>
+
+</div>
+  <div><a href="hp-manali.html"><img src="img/hp/kullu/parvati.jpg"></a>
+  <h4>Parvati Valley</h4>
+  <p>Parvati ValleyParvati Valley is situated in the northern Indian state of Himachal Pradesh. From the confluence of the Parvati River with the River Beas, the Parvati Valley runs eastwards, through a steep-sided valley from the town of Bhuntar, in the Kullu district of Himachal Pradesh in Northern India.</p>
+
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+ 
+});
+</script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+
+</body>
+</html>
