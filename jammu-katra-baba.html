@@ -1,0 +1,299 @@
+
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Baba Dhansar</title>  
+  
+  <link rel="stylesheet" href="css/onsenui.css">  
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="js/angular/angular.js"></script>    
+  <script src="js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+
+  <script>
+    var module = angular.module('app', ['onsen']);
+  </script>
+
+  <style>
+
+  ons-carousel-item {
+  display: table;
+  text-align: center;
+}
+
+ons-carousel-item img {
+  max-width: 100%;
+}
+.item-label {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  line-height: 1;
+  font-size: 48px;
+  font-weight: bold;
+}
+.cover-label {
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: 10px;
+  color: white;
+}
+
+  .center{
+    text-align: center;
+  }
+ 
+    .page--menu-page__background {
+      background-color: #333;
+    }
+    
+    .page--menu-page__content {
+      color: white;
+    }
+
+    .menu-close,
+    .menu-close > .toolbar-button {
+      color: #999;
+    }
+
+    .menu-list,
+    .menu-item:first-child,
+    .menu-item:last-child,
+    .menu-item {
+      background-color: transparent;
+      background-image: none !important;
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .menu-item {
+      padding: 0 0 0 20px;
+      line-height: 52px;
+      height: 52px;
+      text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+    }
+
+    .menu-item:active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-notification {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 14px;
+      height: 16px;
+      line-height: 16px;
+      min-width: 16px;
+      font-weight: 600;
+    }
+
+    .bottom-menu-list,
+    .bottom-menu-item:first-child,
+    .bottom-menu-item:last-child,
+    .bottom-menu-item {
+      border-color: #393939;
+      background-color: transparent;
+      background-image: none !important;
+      color: #ccc;
+    }
+
+    .bottom-menu-item:active {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    a {
+    color: #ffffff;
+}
+  </style>
+  
+</head>
+
+<body>    
+  
+  <ons-sliding-menu
+    menu-page="menu.html" main-page="page1.html" side="left"
+    var="menu" type="reveal" max-slide-distance="260px" swipeable="true">
+  </ons-sliding-menu>
+
+  <ons-template id="menu.html">
+    <ons-page modifier="menu-page">
+      <ons-toolbar modifier="transparent"></ons-toolbar>
+
+      <ons-list class="menu-list">
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})" >
+          <ons-icon icon="fa-plane" fixed-width="true"></ons-icon>
+          Modes of Travel</a>
+        </ons-list-item>
+
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
+          <ons-icon icon="fa-home" fixed-width="true"></ons-icon>
+          Accomodation</a>
+        </ons-list-item>
+
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+          <ons-icon icon="fa-cutlery" fixed-width="true"></ons-icon>
+          Food Places
+        </ons-list-item>
+
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('page4.html', {closeMenu: true})">
+          <ons-icon icon="fa-shopping-cart" fixed-width="true"></ons-icon>
+          Shopping
+        </ons-list-item>
+
+      <hr>
+
+        <ons-list-item class="menu-item" ng-click="menu.close()">
+          <ons-icon icon="fa-times" fixed-width="true"></ons-icon>
+          Close Menu
+        </ons-list-item>
+      </ons-list>
+
+      
+
+    
+    </ons-page>
+  </ons-template>
+
+<ons-template id="page1.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Modes of Travel</div>
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 20px; text-align: center;">
+        <ons-col>
+        
+          <ul class="list list--inset">
+  <li class="list__item list__item--inset">Taxi</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">BUS : This place is well connected by the bus services . There are regular buses, taxis and other roadways options to reach Katra. The places vaishno devi, baba dhansar, dera baba banda are near to each other.</li>
+  <li class="list__header"></li>
+   <li class="list__item list__item--inset">Train : The nearest rail head is Jammu tawi which is about 45 km from katra.This railway station is well linked with major cities in the country especially the northern part. Trains are considered as a better option by most pilgrims who plan to travel to Katra.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">nearst airport is jammu airport
+    <br>Indian airlines office, Delhi gate- Ph 410999
+    <br>Jet Airways – 2561105
+    <br>Kingfisher Airlines – 1800 2093030.
+    <br>Indigo-0124 435 2500
+    <br>Spicejet-098718 03333 </li>
+  <li class="list__header"></li>
+  
+</ul>
+        </ons-col>
+      </ons-row>
+
+
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="page2.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">Accomodation</div>
+      </ons-toolbar>
+
+
+      <ons-row style="margin-top: 20px; text-align: center;">
+        <ons-col>
+        
+          <ul class="list list--inset">
+
+  <li class="list__item list__item--inset">Hotel Devi Grand: Near Toll Barrier Reasi Road , Jammu And Kashmir, India 182320.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">Hotel Asia Shripati: Jammu Katra Road, Katra , Jammu And Kashmir, India 182301.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">Hotel Sahil.</li>
+  <li class="list__header"></li>
+          
+  
+</ul>
+        </ons-col>
+      </ons-row>
+
+
+    </ons-page>
+  </ons-template>
+
+   <ons-template id="page3.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        
+        <div class="center">Food Places</div>
+      </ons-toolbar>
+
+      <ons-row style="margin-top: 20px; text-align: center;">
+        <ons-col>
+        
+          <ul class="list list--inset">
+
+  <li class="list__item list__item--inset">Punjabi haveli restaurant:Katra Jammu Road, Katra, 182301.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">Kens Food Planet: Kashmir Road, Katra, 182301.</li>
+  <li class="list__header"></li>
+   <li class="list__item list__item--inset">Prem lahori vaishno dhaba: Ban ganga road, Katra, 182301.</li>
+  <li class="list__header"></li>
+  
+</ul>
+        </ons-col>
+      </ons-row>
+    </ons-page>
+  </ons-template>
+
+   <ons-template id="page4.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button ng-click="menu.toggle()">
+            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        
+        <div class="center">Shopping</div>
+      </ons-toolbar>
+
+      <ons-row style="margin-top: 20px; text-align: center;">
+        <ons-col>
+        
+          <ul class="list list--inset">
+
+  <li class="list__item list__item--inset">Katra main bazzar.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">Vaishno devi temple market.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">Trikuta market.</li>
+  <li class="list__header"></li>
+  <li class="list__item list__item--inset">Jaro market.</li>
+  <li class="list__header"></li>
+  
+</ul>
+        </ons-col>
+      </ons-row>
+    </ons-page>
+  </ons-template>
+ 
+</body>
+</html>
