@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Shimla</title>  
+
+  <link rel="stylesheet" href="css/onsenui.css">  
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="js/angular/angular.js"></script>    
+  <script src="js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+<style>
+
+.center{
+    text-align: center;
+}
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="center"><h4>Shimla<h4></div>   
+
+<div id="owl-demo" class="owl-carousel">
+  <div><a href="hp-shimla-ridge.html"><img src="img/hp/shimla/ridge.jpg"></a>
+  <h4>The ridge</h4>
+  <p>The Ridge road is a large open space, located in the heart of Shimla, the capital city of Himachal Pradesh, India. The Ridge is the hub of all cultural activities of Shimla. It is situated along the Mall Road, which is the famous shopping center of Shimla. Most major places of Shimla like Snowdon, Mall, Jakhoo hill, etc. are connected through the Ridge.</p>
+
+</div>
+  <div><a href="hp-shimla-chadwick.html"><img src="img/hp/shimla/chadwick.jpg"></a>
+  <h4>Chadwick Falls</h4>
+  <p>The Shimla Chadwick falls flow from a height of 1586 meters. This fall of Shimla is a very favorite destination of the visitors. The fall is encircled with thick green woods from all sides and looks amazing in the midst of steep hills of pine and deodar. The standing woods make the place look all the more exotic and ravishing. The water of the Chadwick falls of Shimla is very cold and bracing. </p>
+
+</div>
+  <div><a href="hp-shimla-kufri.html"><img src="img/hp/shimla/kufri.jpg"></a>
+  <h4>Kufri</h4>
+  <p>Kufri is a small hill station in Shimla district of Himachal Pradesh state in India. It is located 13 km from the state capital Shimla on the National Highhway No.22. The highest point in the surrounding region, Kufri has a Himalayan wild life zoo which hosts rare antelopes, felines and birds including the Himalayan monal, the state bird of Himachal Pradesh. During winter a meandering path through the potato plantations turns into a popular ski track.</p>
+
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+ 
+});
+</script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+
+</body>
+</html>

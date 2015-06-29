@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Jammu and Kashmir</title>  
+
+  <link rel="stylesheet" href="css/onsenui.css">  
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="js/angular/angular.js"></script>    
+  <script src="js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+<style>
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>   
+
+<div id="owl-demo" class="owl-carousel">
+  <div><a href="jammu-gulmarg-shiva.html"><img src="img/jammu/gulmarg/shivatemple.jpg"></a>
+  <h4>Shiva Temple</h4>
+  <p>The Shiva temple also known as "Rani Temple" or "Maharani Temple", is situated on a small hillock in the centre of Gulmarg. The temple became famous when bollywood number "Jai Jai Shiva Shanker" was shot here in early 1970s featuring Rajesh Khanna - Mumtaz.</p>
+
+</div>
+  <div><a href="jammu-gulmarg-gandola.html"><img src="img/jammu/gulmarg/gulmohar.jpg"></a>
+  <h4>Gulmarg Gandola</h4>
+  <p>Gondola ride in Gulmarg is perhaps the most awesome when it comes to views. The ride is split in two stages and both require diff tickets. Tickets can be sourced online. Both stages are a must do. The Gondola ride is subject to weather.</p>
+
+
+</div>
+  <div><a href="jammu-gulmarg-biosphere.html"><img src="img/jammu/gulmarg/biosphere.jpg"></a>
+  <h4>Gulmarg Biosphere Reserve</h4>
+  <p>Gulmarg Biosphere Reserve is home to many common and rare species of fauna, flora and avifauna. Located at an altitude varying between 2400 and 4,300 metres above sea level, this reserve is among those regions where biodiversity is in its richest form. Nature has blessed this sanctuary with expansive patches of conifers and green herbs that give it a scenic appearance.</p>
+
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+ 
+});
+</script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+
+</body>
+</html>

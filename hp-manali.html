@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Manali</title>  
+
+  <link rel="stylesheet" href="css/onsenui.css">  
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="js/angular/angular.js"></script>    
+  <script src="js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+<style>
+
+.center{
+    text-align: center;
+}
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="center"><h4>Kullu<h4></div>   
+
+<div id="owl-demo" class="owl-carousel">
+  <div><a href="hp-manali-solang.html"><img src="img/hp/manali/sohlang.jpg"></a>
+  <h4>Solang Valley</h4>
+  <p>Solang Nala (Valley) drives its name from combination of words Solang (Nearby village) and Nullah (water stream). It is a side valley at the top of the Kullu Valley in Himachal Pradesh, India 14 km northwest of the resort town Manali on the way to Rohtang Pass, and is known for its summer and winter sport conditions. The sports most commonly offered are parachuting, paragliding, skating and zorbing.</p>
+
+</div>
+  <div><a href="hp-manali-jogini.html"><img src="img/hp/manali/jogini.jpg"></a>
+  <h4>Jogini Waterfall</h4>
+  <p>Jogini Falls is a waterfall with a stream running down to join the river Beas in the Kullu Valley below. It is sacred to the the village goddess Jogini & is therefore a place of female power, known as a shakti peeth.</p>
+
+</div>
+  <div><a href="hp-manali-vanvihar.html"><img src="img/hp/manali/vanvihar.jpg"></a>
+  <h4>Van Vihar National Park</h4>
+  <p>Van Vihar National Park is a national park in India located at the heart of Bhopal, the capital city of Madhya Pradesh. Declared a national park in 1983, it covers an area of about 4.45 km2. Although it has the status of a national park, Van Vihar is developed and managed as a modern zoological park, following the guidelines of the Central Zoo Authority. The animals are kept in their near natural habitat. Most of the animals are either orphaned brought from various parts of the state or those, which are exchanged from other zoos. No animal is deliberately captured from the forest.[1] Van Vihar is unique because it allows easy access to the visitors through a road passing through the park, security of animals assured from poachers by building trenches and walls, chain-link fence and by providing natural habitat to the animals.</p>
+
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+ 
+});
+</script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Jammu and Kashmir</title>  
+
+  <link rel="stylesheet" href="css/onsenui.css">  
+  <link rel="stylesheet" href="css/onsen-css-components-blue-basic-theme.css">  
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="js/angular/angular.js"></script>    
+  <script src="js/onsenui.js"></script>
+
+  <script src="cordova.js"></script>
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+
+
+
+
+
+<style>
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>   
+
+<div id="owl-demo" class="owl-carousel">
+  <div><a href="jammu-katra-vaishno.html"><img src="img/jammu/katra/vaishno.jpg"></a>
+  <h4>Vaishno Devi</h4>
+  <p>Temple of Vaishno Devi is the main reason to visit Katra and the number one attraction here. It is one of the famous cave shrines of Goddess Vaishno Devi which is also known as Trikuta Bhagwati. This temnple is located at a height of 5200 feet. In this beautiful sacred shrine the goddess is symbolized in the form of three pindis (rocks).</p>
+
+</div>
+  <div><a href="jammu-katra-baba.html"><img src="img/jammu/katra/baba.jpg"></a>
+  <h4>Baba Dhansar</h4>
+  <p>Baba Dhansar is located around 10 kilometers from Katra. This place is renowned for its cool and pleasing atmosphere which makes it one of the amazing picnic spots for travelers. This beautiful tourist destination is located in the middle of the thick grove of trees that brings together a large number of travelers every year from all around the country.</p>
+
+
+</div>
+  <div><a href="jammu-katra-dera.html"><img src="img/jammu/katra/dera.jpg"></a>
+  <h4>Dera Baba Banda</h4>
+  <p>Dera Baba Banda is another major Katra attraction which is located just about 30 kilometers from the town. This place is considered as an important Hindu-Sikh pilgrimage center. This gurudwara which is a holy place of Sikhs, was built by Baba Banda Bairaagi near the banks of river Chenab.</p>
+
+</div>
+
+</div>
+
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+ 
+});
+</script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+
+</body>
+</html>
